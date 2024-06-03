@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4C2C2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#8B4513"
+        android:layout_alignParentTop="true">
+
+        <!-- Tombol Panah -->
+        <ImageButton
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tembung Kosok Balen"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Tabel -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:layout_marginTop="32dp"
+        android:padding="16dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="3"
+                    android:text="Tembung Kosok Balen"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_weight="5"
+                    android:text="Artinya"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="1" />
+                <TextView android:layout_weight="3" android:text="Gedhe - Cilik" />
+                <TextView android:layout_weight="5" android:text="Besar - Kecil" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="2" />
+                <TextView android:layout_weight="3" android:text="Dhuwur - Endhek" />
+                <TextView android:layout_weight="5" android:text="Tinggi - Rendah" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="3" />
+                <TextView android:layout_weight="3" android:text="Dawa - Cendhak" />
+                <TextView android:layout_weight="5" android:text="Panjang - Pendek" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="4" />
+                <TextView android:layout_weight="3" android:text="Abot - Entheng" />
+                <TextView android:layout_weight="5" android:text="Berat - Ringan" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="5" />
+                <TextView android:layout_weight="3" android:text="Cepet - Alon" />
+                <TextView android:layout_weight="5" android:text="Cepat - Lambat" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="6" />
+                <TextView android:layout_weight="3" android:text="Panas - Adhem" />
+                <TextView android:layout_weight="5" android:text="Panas - Dingin" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="7" />
+                <TextView android:layout_weight="3" android:text="Anyar - Lawas" />
+                <TextView android:layout_weight="5" android:text="Baru - Lama" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="8" />
+                <TextView android:layout_weight="3" android:text="Akeh - Sithik" />
+                <TextView android:layout_weight="5" android:text="Banyak - Sedikit" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="9" />
+                <TextView android:layout_weight="3" android:text="Sugih - Mlarat" />
+                <TextView android:layout_weight="5" android:text="Kaya - Miskin" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="10" />
+                <TextView android:layout_weight="3" android:text="Bener - Salah" />
+                <TextView android:layout_weight="5" android:text="Benar - Salah" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="11" />
+                <TextView android:layout_weight="3" android:text="Meneng - Rame" />
+                <TextView android:layout_weight="5" android:text="Sepi - Ramai" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="12" />
+                <TextView android:layout_weight="3" android:text="Suwe - Cepet" />
+                <TextView android:layout_weight="5" android:text="Lama - Cepat" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="13" />
+                <TextView android:layout_weight="3" android:text="Enak - Ora Enak" />
+                <TextView android:layout_weight="5" android:text="Enak - Tidak Enak" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="14" />
+                <TextView android:layout_weight="3" android:text="Ayu - Elek" />
+                <TextView android:layout_weight="5" android:text="Cantik - Jelek" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="15" />
+                <TextView android:layout_weight="3" android:text="Seneng - Sedih" />
+                <TextView android:layout_weight="5" android:text="Senang - Sedih" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="16" />
+                <TextView android:layout_weight="3" android:text="Rame - Sepi" />
+                <TextView android:layout_weight="5" android:text="Ramai - Sepi" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="17" />
+                <TextView android:layout_weight="3" android:text="Terang - Peteng" />
+                <TextView android:layout_weight="5" android:text="Terang - Gelap" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="18" />
+                <TextView android:layout_weight="3" android:text="Gampang - Angel" />
+                <TextView android:layout_weight="5" android:text="Mudah - Sulit" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="19" />
+                <TextView android:layout_weight="3" android:text="Resik - Reged" />
+                <TextView android:layout_weight="5" android:text="Bersih - Kotor" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="20" />
+                <TextView android:layout_weight="3" android:text="Waras - Lara" />
+                <TextView android:layout_weight="5" android:text="Sehat - Sakit" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="21" />
+                <TextView android:layout_weight="3" android:text="Buka - Tutup" />
+                <TextView android:layout_weight="5" android:text="Buka - Tutup" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="22" />
+                <TextView android:layout_weight="3" android:text="Maju - Mundur" />
+                <TextView android:layout_weight="5" android:text="Maju - Mundur" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="23" />
+                <TextView android:layout_weight="3" android:text="Kenceng - Alon" />
+                <TextView android:layout_weight="5" android:text="Kencang - Lambat" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="24" />
+                <TextView android:layout_weight="3" android:text="Langsing - Lemes" />
+                <TextView android:layout_weight="5" android:text="Langsing - Gemuk" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="25" />
+                <TextView android:layout_weight="3" android:text="Omah - Imbuh" />
+                <TextView android:layout_weight="5" android:text="Rumah - Tambah" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="26" />
+                <TextView android:layout_weight="3" android:text="Elok - Tiris" />
+                <TextView android:layout_weight="5" android:text="Bagus - Buruk" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="27" />
+                <TextView android:layout_weight="3" android:text="Jauh - Cedhak" />
+                <TextView android:layout_weight="5" android:text="Jauh - Dekat" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="28" />
+                <TextView android:layout_weight="3" android:text="Atis - Panas" />
+                <TextView android:layout_weight="5" android:text="Dingin - Panas" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="29" />
+                <TextView android:layout_weight="3" android:text="Keri - Ngarep" />
+                <TextView android:layout_weight="5" android:text="Belakang - Depan" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="30" />
+                <TextView android:layout_weight="3" android:text="Tambah - Kurang" />
+                <TextView android:layout_weight="5" android:text="Tambah - Kurang" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="31" />
+                <TextView android:layout_weight="3" android:text="Kasar - Halus" />
+                <TextView android:layout_weight="5" android:text="Kasar - Halus" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="32" />
+                <TextView android:layout_weight="3" android:text="Susah - Gampang" />
+                <TextView android:layout_weight="5" android:text="Susah - Mudah" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="33" />
+                <TextView android:layout_weight="3" android:text="Singkat - Jero" />
+                <TextView android:layout_weight="5" android:text="Pendek - Dalam" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="34" />
+                <TextView android:layout_weight="3" android:text="Kandel - Tipis" />
+                <TextView android:layout_weight="5" android:text="Tebal - Tipis" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="35" />
+                <TextView android:layout_weight="3" android:text="Ngresek - Resik" />
+                <TextView android:layout_weight="5" android:text="Berisik - Bersih" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="36" />
+                <TextView android:layout_weight="3" android:text="Bujur - Cidra" />
+                <TextView android:layout_weight="5" android:text="Jujur - Bohong" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="37" />
+                <TextView android:layout_weight="3" android:text="Meh - Ora Meh" />
+                <TextView android:layout_weight="5" android:text="Ingin - Tidak Ingin" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="38" />
+                <TextView android:layout_weight="3" android:text="Buka - Teko" />
+                <TextView android:layout_weight="5" android:text="Datang - Pergi" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="39" />
+                <TextView android:layout_weight="3" android:text="Terus - Mandeg" />
+                <TextView android:layout_weight="5" android:text="Lanjut - Berhenti" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="40" />
+                <TextView android:layout_weight="3" android:text="Meh - Aja Meh" />
+                <TextView android:layout_weight="5" android:text="Akan - Tidak Akan" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="41" />
+                <TextView android:layout_weight="3" android:text="Suluh - Penting" />
+                <TextView android:layout_weight="5" android:text="Menyala - Penting" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="42" />
+                <TextView android:layout_weight="3" android:text="Ngarep - Keri" />
+                <TextView android:layout_weight="5" android:text="Depan - Belakang" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="43" />
+                <TextView android:layout_weight="3" android:text="Akeh - Sedikit" />
+                <TextView android:layout_weight="5" android:text="Banyak - Sedikit" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="44" />
+                <TextView android:layout_weight="3" android:text="Kerjo - Kere" />
+                <TextView android:layout_weight="5" android:text="Kerja - Malas" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="45" />
+                <TextView android:layout_weight="3" android:text="Payu - Ora Payu" />
+                <TextView android:layout_weight="5" android:text="Laku - Tidak Laku" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="46" />
+                <TextView android:layout_weight="3" android:text="Kendel - Wedi" />
+                <TextView android:layout_weight="5" android:text="Berani - Takut" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="47" />
+                <TextView android:layout_weight="3" android:text="Semangat - Ngedoi" />
+                <TextView android:layout_weight="5" android:text="Semangat - Lemah" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="48" />
+                <TextView android:layout_weight="3" android:text="Dina - Bengi" />
+                <TextView android:layout_weight="5" android:text="Siang - Malam" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="49" />
+                <TextView android:layout_weight="3" android:text="Pahit - Legi" />
+                <TextView android:layout_weight="5" android:text="Pahit - Manis" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:layout_weight="1" android:text="50" />
+                <TextView android:layout_weight="3" android:text="Jujur - Goroh" />
+                <TextView android:layout_weight="5" android:text="Jujur - Bohong" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
